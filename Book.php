@@ -29,4 +29,14 @@ class Book
   {
     return $this->loanCount;
   }
+
+  public function getYear(): int
+  {
+    return $this->year;
+  }
+
+  public function getAuthor(): string
+  {
+    return $this->author;
+  }
 }
