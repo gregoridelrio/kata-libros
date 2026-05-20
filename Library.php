@@ -27,4 +27,15 @@ class Library
     }
     return $mostBorrowed;
   }
+
+  public function getBookYearBefore2000(): array
+  {
+    $booksBefore2000 = [];
+    foreach ($this->books as $book) {
+      if ($book->getYear() < 2000) {
+        $booksBefore2000[] = $book;
+      }
+    }
+    return $booksBefore2000;
+  }
 }
